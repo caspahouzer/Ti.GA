@@ -304,7 +304,7 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD)";
-				"ARCHS[sdk=iphonesimulator8.1]" = i386;
+				"ARCHS[sdk=iphonesimulator8.1]" = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -338,7 +338,7 @@
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				VALID_ARCHS = "armv7 arm64 i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -348,7 +348,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD)";
-				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/TiGa.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -375,7 +375,7 @@
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				VALID_ARCHS = "armv7 arm64 i386 x86_64";
 			};
 			name = Release;
 		};
@@ -415,6 +415,7 @@
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "armv7 arm64 i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -448,6 +449,7 @@
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "armv7 arm64 i386 x86_64";
 			};
 			name = Release;
 		};
